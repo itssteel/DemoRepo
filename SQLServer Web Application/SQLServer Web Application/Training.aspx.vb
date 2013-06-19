@@ -13,7 +13,8 @@ Public Class Training
     End Sub
 
     Function DisplayMentorList() As DataSet
-        Dim sql As String = "select distinct Top 30 [SenderEmail] Mentors from [TTSLSMS].[dbo].[V_SMS]"
+        'Dim sql As String = "select distinct Top 30 [SenderEmail] Mentors from [TTSLSMS].[dbo].[V_SMS]"
+        Dim sql As String="select GETDATE()"
         ' select [SenderEmail] from [TTSLSMS].[dbo].[V_SMS] where Row_number between 1 and 30
         Dim dt As New DataTable
         'Using smsconn As New SqlConnection(ConfigurationManager.ConnectionStrings("CNS_SMSTEST").ConnectionString.ToString.Trim)
